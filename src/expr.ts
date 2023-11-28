@@ -12,7 +12,7 @@ export interface NumberLiteralExpr extends LiteralExpr {
   t: "NumberLiteralExpr";
   v: number;
 }
-export const makeNumLiteralExp = (v: number): NumberLiteralExpr => {
+export const makeNumberLiteralExpr = (v: number): NumberLiteralExpr => {
   return { t: "NumberLiteralExpr", v };
 };
 

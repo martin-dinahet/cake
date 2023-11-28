@@ -1,5 +1,7 @@
 import { Lexer } from "./lexer.ts";
+import { Parser } from "./parser.ts";
 
-const source = `let a = ("Hello, World" == 3 + 43);`;
+const source = `"Hello, World!" 12 x y`;
 const tokens = new Lexer(source).run();
-console.log(tokens);
+const output = new Parser(tokens).run();
+console.log(output);
